@@ -1,16 +1,46 @@
-# React + Vite
+# Frugi 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Grocery shopping with your budget in mind.
 
-Currently, two official plugins are available:
+Frugi is a grocery price comparison application that brings grocery prices, nearby stores, routes, and meal options into one place. It helps shoppers compare their options and plan grocery trips around cost and convenience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built for the **UWB Saves the World Hackathon in April 2026**, Frugi went from idea to working prototype in **24 hours**.
 
-## React Compiler
+## Why Frugi?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Planning affordable meals involves more than finding a recipe. Shoppers also need to figure out where to buy ingredients, how prices compare, and whether the trip makes sense. Frugi brings these decisions into a single interface to make budget-conscious grocery planning easier.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Grocery price comparison:** Compare available grocery prices using Kroger product data.
+- **Store discovery and mapping:** Find nearby grocery stores and view their locations.
+- **Trip planning:** Explore routes to support more efficient grocery trips.
+- **Meal planning:** Explore recipes and meal options through Spoonacular.
+- **Unified interface:** View store, price, route, and meal information together.
+
+## Tech Stack
+
+| Technology | Purpose |
+| --- | --- |
+| React | Component-based user interface |
+| Vite | Frontend development tooling and build system |
+| Kroger API | Grocery product and pricing data |
+| Google Maps API | Store mapping and routing |
+| Spoonacular API | Recipe and meal information |
+
+## API Integration
+
+Frugi integrates three external services with different response formats and levels of data completeness. API responses are validated and normalized into a consistent format so the interface can present grocery prices, stores, routes, and meal options together.
+
+Pricing and feature availability depend on the data returned by the connected services.
+
+## Development
+
+Frugi was built through rapid, AI-assisted development using Claude Code, iterative prompting, code review, and debugging. The hackathon focused on delivering a working prototype within a 24-hour window.
+
+## Project Background
+
+- **Event:** UWB Saves the World Hackathon
+- **Date:** April 2026
+- **Build window:** 24 hours
+- **Scope:** Hackathon prototype
